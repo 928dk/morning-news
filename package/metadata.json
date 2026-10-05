@@ -1,0 +1,22 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "",
+                "Name": "the author"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "Morning sync status, new files, and AI brief",
+        "EnabledByDefault": true,
+        "Icon": "office-calendar",
+        "Id": "morning-news",
+        "License": "GPL-3.0-only",
+        "Name": "Morning News",
+        "Version": "0.1.0",
+        "Website": ""
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "FormFactors": ["desktop", "panel"],
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

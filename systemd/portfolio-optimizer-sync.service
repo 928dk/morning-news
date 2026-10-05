@@ -1,0 +1,14 @@
+[Unit]
+Description=Portfolio Optimizer — nightly price sync
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=$HOME/projects/Client/portfolio-optimizer-pro
+ExecStart=$HOME/projects/Client/portfolio-optimizer-pro/scripts/nightly_sync.sh
+StandardOutput=append:$HOME/projects/Client/portfolio-optimizer-pro/logs/sync_prices.log
+StandardError=append:$HOME/projects/Client/portfolio-optimizer-pro/logs/sync_prices.log
+
+[Install]
+WantedBy=multi-user.target

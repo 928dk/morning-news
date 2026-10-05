@@ -1,0 +1,13 @@
+[Unit]
+Description=Morning News — collect sync status and generate AI brief
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=$HOME/projects/Client/morning-news/src/cli.py --update
+StandardOutput=append:$HOME/.cache/morning-news/update.log
+StandardError=append:$HOME/.cache/morning-news/update.log
+
+[Install]
+WantedBy=multi-user.target

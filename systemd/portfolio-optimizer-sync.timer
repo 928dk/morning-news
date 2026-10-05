@@ -1,0 +1,11 @@
+[Unit]
+Description=Portfolio Optimizer — nightly price sync at 2 AM
+After=network-online.target
+
+[Timer]
+OnCalendar=*-*-* 02:00:00
+Persistent=true
+RandomizedDelaySec=1800
+
+[Install]
+WantedBy=timers.target

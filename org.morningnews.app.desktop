@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Morning News
+Comment=Sync status collector with AI brief
+Exec=python3 -m app --tray
+Icon=office-calendar
+Terminal=false
+Categories=Utility;
+X-KDE-autostart-after=plasma-core
